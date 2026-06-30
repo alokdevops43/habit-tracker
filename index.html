@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Habit Tracker</h1>
+            <button id="themeBtn">🌙</button>
+        </header>
+
+        <!-- Stats -->
+        <section class="stats">
+            <div class="card">
+                <h2 id="totalHabits">0</h2>
+                <p>Total Habits</p>
+            </div>
+
+            <div class="card">
+                <h2 id="completedHabits">0</h2>
+                <p>Completed Today</p>
+            </div>
+
+            <div class="card">
+                <h2 id="bestStreak">0 🔥</h2>
+                <p>Best Streak</p>
+            </div>
+        </section>
+
+        <!-- Add Habit -->
+        <section class="add-habit">
+            <input
+                type="text"
+                id="habitInput"
+                placeholder="Enter a new habit..."
+            >
+            <button id="addHabitBtn">Add Habit</button>
+        </section>
+
+        <!-- Progress -->
+        <section class="progress-section">
+            <div class="progress-header">
+                <span>Today's Progress</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </section>
+
+        <!-- Habit List -->
+        <section class="habit-list">
+
+            <!-- Example Card -->
+
+            <!--
+            <div class="habit-card">
+                <div class="habit-info">
+                    <input type="checkbox">
+
+                    <div>
+                        <h3>Drink Water</h3>
+                        <p>🔥 5 Day Streak</p>
+                    </div>
+                </div>
+
+                <button class="delete-btn">🗑</button>
+            </div>
+            -->
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
